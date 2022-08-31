@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#00BCD4"
+    android:background="#E3C190"
     android:orientation="vertical">
 
 
@@ -17,8 +17,7 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginTop="100dp"
-        android:background="@color/purple_700"
+        android:background="#5E2310"
         />
 
     <ImageView
@@ -26,7 +25,7 @@
         android:layout_height="150dp"
         android:src="@drawable/calculadora"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
         />
 
     <TextView
@@ -47,7 +46,6 @@
         android:layout_gravity="center"
         android:hint="Ingrese el primer valor"
         android:gravity="center"
-        android:background="@color/white"
         android:inputType="numberDecimal"
         />
 
@@ -69,8 +67,73 @@
         android:layout_gravity="center"
         android:hint="Ingrese el segundo valor"
         android:gravity="center"
-        android:background="@color/white"
         android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tvresultado"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnsumar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="20dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnrestar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnmultiplicar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btndividir"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_margin="10dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_margin="10dp"
+            android:backgroundTint="#F10606"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
 
 
 </LinearLayout>
